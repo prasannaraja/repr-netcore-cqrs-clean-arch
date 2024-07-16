@@ -5,13 +5,13 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{62507A46-7D9B-4FAE-8512-541210BABA01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "Gateway\OcelotGateway\OcelotGateway.csproj", "{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "src\Gateway\OcelotGateway\OcelotGateway.csproj", "{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuidingBlocks", "BuidingBlocks", "{1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuidingBlocks", "src\BuidingBlocks", "{1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{DB827607-8D82-47B7-84B8-AF2F7C237B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{DB827607-8D82-47B7-84B8-AF2F7C237B7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.Messaging", "BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{67D5F08F-1CA9-48CF-9079-C1CF278F336A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.Messaging", "src\BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{67D5F08F-1CA9-48CF-9079-C1CF278F336A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6DFC74DD-D6C7-4E6B-89D5-186AFE5267FD}"
 EndProject
@@ -21,17 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{0FAE79
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{C0489C83-2CC2-48B0-96B9-A8151F849E66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.API", "Services\Weather\Weather.API\Weather.API.csproj", "{CD04C2AF-8BA3-4A18-9880-09D661F32B24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.API", "src\Services\Weather\Weather.API\Weather.API.csproj", "{CD04C2AF-8BA3-4A18-9880-09D661F32B24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Application", "Services\Weather\Weather.Application\Weather.Application.csproj", "{6961DF0B-3DE1-41A3-85F4-8C8E9543B77F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Application", "src\Services\Weather\Weather.Application\Weather.Application.csproj", "{6961DF0B-3DE1-41A3-85F4-8C8E9543B77F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "Services\Weather\Weather.Domain\Weather.Domain.csproj", "{A771AE12-27B0-4E09-AB86-73054003E7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "src\Services\Weather\Weather.Domain\Weather.Domain.csproj", "{A771AE12-27B0-4E09-AB86-73054003E7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Infrastructure", "Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{C9A63F95-21BD-4FD8-AE9A-9CB49590AE6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Infrastructure", "src\Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{C9A63F95-21BD-4FD8-AE9A-9CB49590AE6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.API", "Services\Search\Search.API\Search.API.csproj", "{2244B096-F810-4C8C-B576-C4442568C983}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.API", "src\Services\Search\Search.API\Search.API.csproj", "{2244B096-F810-4C8C-B576-C4442568C983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Grpc", "Services\Sorting\Sorting.Grpc\Sorting.Grpc.csproj", "{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Grpc", "src\Services\Sorting\Sorting.Grpc\Sorting.Grpc.csproj", "{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
