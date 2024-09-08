@@ -4,22 +4,26 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
 EXPOSE 8080
-EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# Install clang/zlib1g-dev dependencies for publishing to native
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    clang zlib1g-dev
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Gateway/OcelotGateway/OcelotGateway.csproj", "Gateway/OcelotGateway/"]
-RUN dotnet restore "./Gateway/OcelotGateway/OcelotGateway.csproj"
+COPY ["src/Gateway/OcelotGateway/OcelotGateway.csproj", "src/Gateway/OcelotGateway/"]
+RUN dotnet restore "./src/Gateway/OcelotGateway/OcelotGateway.csproj"
 COPY . .
-WORKDIR "/src/Gateway/OcelotGateway"
+WORKDIR "/src/src/Gateway/OcelotGateway"
 RUN dotnet build "./OcelotGateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./OcelotGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./OcelotGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=true
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/runtime-deps:8.0 AS final
 WORKDIR /app
+EXPOSE 8080
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "OcelotGateway.dll"]
+ENTRYPOINT ["./OcelotGateway"]

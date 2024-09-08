@@ -5,9 +5,7 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{62507A46-7D9B-4FAE-8512-541210BABA01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "src\Gateway\OcelotGateway\OcelotGateway.csproj", "{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuidingBlocks", "src\BuidingBlocks", "{1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuidingBlocks", "BuidingBlocks", "{1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{DB827607-8D82-47B7-84B8-AF2F7C237B7C}"
 EndProject
@@ -21,17 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{0FAE79
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{C0489C83-2CC2-48B0-96B9-A8151F849E66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.API", "src\Services\Weather\Weather.API\Weather.API.csproj", "{CD04C2AF-8BA3-4A18-9880-09D661F32B24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.API", "src\Services\Weather\Weather.API\Weather.API.csproj", "{CD04C2AF-8BA3-4A18-9880-09D661F32B24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Application", "src\Services\Weather\Weather.Application\Weather.Application.csproj", "{6961DF0B-3DE1-41A3-85F4-8C8E9543B77F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Application", "src\Services\Weather\Weather.Application\Weather.Application.csproj", "{6961DF0B-3DE1-41A3-85F4-8C8E9543B77F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "src\Services\Weather\Weather.Domain\Weather.Domain.csproj", "{A771AE12-27B0-4E09-AB86-73054003E7EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Domain", "src\Services\Weather\Weather.Domain\Weather.Domain.csproj", "{A771AE12-27B0-4E09-AB86-73054003E7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Infrastructure", "src\Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{C9A63F95-21BD-4FD8-AE9A-9CB49590AE6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Infrastructure", "src\Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{C9A63F95-21BD-4FD8-AE9A-9CB49590AE6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.API", "src\Services\Search\Search.API\Search.API.csproj", "{2244B096-F810-4C8C-B576-C4442568C983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search.API", "src\Services\Search\Search.API\Search.API.csproj", "{2244B096-F810-4C8C-B576-C4442568C983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Grpc", "src\Services\Sorting\Sorting.Grpc\Sorting.Grpc.csproj", "{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting.Grpc", "src\Services\Sorting\Sorting.Grpc\Sorting.Grpc.csproj", "{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "src\Gateway\OcelotGateway\OcelotGateway.csproj", "{004E5F8D-9377-4C71-A6F5-FC80BD2851FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB827607-8D82-47B7-84B8-AF2F7C237B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB827607-8D82-47B7-84B8-AF2F7C237B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB827607-8D82-47B7-84B8-AF2F7C237B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,12 +71,15 @@ Global
 		{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{911F174C-3DD2-4F5E-A07E-F61D982BC3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004E5F8D-9377-4C71-A6F5-FC80BD2851FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004E5F8D-9377-4C71-A6F5-FC80BD2851FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004E5F8D-9377-4C71-A6F5-FC80BD2851FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004E5F8D-9377-4C71-A6F5-FC80BD2851FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C2047B9F-11E8-480C-A3F4-8696CBE0CCF1} = {62507A46-7D9B-4FAE-8512-541210BABA01}
 		{DB827607-8D82-47B7-84B8-AF2F7C237B7C} = {1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}
 		{67D5F08F-1CA9-48CF-9079-C1CF278F336A} = {1D6D2FB5-BF82-4B37-BE8D-889A2BB141A4}
 		{4EB477B7-07BB-4FA5-A382-D632BBA77439} = {6DFC74DD-D6C7-4E6B-89D5-186AFE5267FD}
@@ -92,6 +91,7 @@ Global
 		{C9A63F95-21BD-4FD8-AE9A-9CB49590AE6E} = {4EB477B7-07BB-4FA5-A382-D632BBA77439}
 		{2244B096-F810-4C8C-B576-C4442568C983} = {0FAE799E-F07A-424E-99FB-C38A4D586D2E}
 		{911F174C-3DD2-4F5E-A07E-F61D982BC3DF} = {C0489C83-2CC2-48B0-96B9-A8151F849E66}
+		{004E5F8D-9377-4C71-A6F5-FC80BD2851FD} = {62507A46-7D9B-4FAE-8512-541210BABA01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD8E582F-3B81-4873-860E-238E2209EDCB}

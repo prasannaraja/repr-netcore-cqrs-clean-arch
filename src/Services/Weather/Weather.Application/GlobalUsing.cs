@@ -1,0 +1,11 @@
+﻿global using BuildingBlocks.CQRS;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Logging;
+global using Weather.Application.Data;
+global using Weather.Application.Dtos;
+global using Weather.Application.Exceptions;
+global using Weather.Application.Extensions;
+global using Weather.Domain.Events;
+global using Weather.Domain.Models;
+global using Weather.Domain.ValueObjects;
