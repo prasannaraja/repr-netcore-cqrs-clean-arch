@@ -1,6 +1,4 @@
-﻿using BuildingBlocks.CQRS;
-using FluentValidation;
-using Weather.Application.Dtos;
+﻿using FluentValidation;
 
 namespace Weather.Application.Weather.Commands.UpdateOrder;
 public record UpdateOrderCommand(OrderDto Order)

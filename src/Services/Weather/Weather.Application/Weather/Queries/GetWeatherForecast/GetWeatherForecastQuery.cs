@@ -1,6 +1,4 @@
-﻿using Weather.Application.Dtos;
-
-namespace Weather.Application.Weather.Queries.GetOrdersByCustomer;
+﻿namespace Weather.Application.Weather.Queries.GetWeatherForecast;
 
 public record GetWeatherForecastQuery(string location)
     : IQuery<GetWeatherForecastResult>;

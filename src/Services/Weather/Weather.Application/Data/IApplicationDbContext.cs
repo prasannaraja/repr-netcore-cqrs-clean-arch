@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Weather.Domain.Models;
-
-namespace Weather.Application.Data;
+﻿namespace Weather.Application.Data;
 public interface IApplicationDbContext
 {
     DbSet<Customer> Customers { get; }

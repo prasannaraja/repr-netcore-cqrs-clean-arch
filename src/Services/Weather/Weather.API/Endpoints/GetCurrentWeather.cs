@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Weather.Application.Weather.Queries.GetOrders;
+using Weather.Application.Weather.Queries.GetCurrentWeather;
 
 namespace Weather.API.Endpoints;
 

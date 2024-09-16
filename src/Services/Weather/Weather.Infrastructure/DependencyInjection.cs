@@ -2,8 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Weather.Application.Data;
-using Weather.Infrastructure.Data;
-using Weather.Infrastructure.Data.Interceptors;
 
 namespace Weather.Infrastructure;
 public static class DependencyInjection

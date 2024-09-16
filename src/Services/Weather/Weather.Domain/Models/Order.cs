@@ -1,8 +1,4 @@
-﻿using Weather.Domain.Abstractions;
-using Weather.Domain.Enums;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Domain.Models;
+﻿namespace Weather.Domain.Models;
 public class Order : Aggregate<OrderId>
 {
     private readonly List<OrderItem> _orderItems = new();

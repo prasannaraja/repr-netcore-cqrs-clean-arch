@@ -1,7 +1,4 @@
-﻿using Weather.Domain.Models;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Infrastructure.Data.Extensions;
+﻿namespace Weather.Infrastructure.Data.Extensions;
 internal class InitialData
 {
     public static IEnumerable<Customer> Customers =>

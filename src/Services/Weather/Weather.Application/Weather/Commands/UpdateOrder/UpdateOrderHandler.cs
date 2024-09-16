@@ -1,9 +1,4 @@
-﻿using Weather.Application.Data;
-using Weather.Application.Dtos;
-using Weather.Domain.Models;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Application.Weather.Commands.UpdateOrder;
+﻿namespace Weather.Application.Weather.Commands.UpdateOrder;
 public class UpdateOrderHandler(IApplicationDbContext dbContext)
     : ICommandHandler<UpdateOrderCommand, UpdateOrderResult>
 {

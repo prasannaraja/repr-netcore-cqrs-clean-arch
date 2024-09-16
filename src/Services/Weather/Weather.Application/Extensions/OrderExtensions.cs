@@ -1,7 +1,4 @@
-﻿using Weather.Application.Dtos;
-using Weather.Domain.Models;
-
-namespace Weather.Application.Extensions;
+﻿namespace Weather.Application.Extensions;
 public static class OrderExtensions
 {
     public static IEnumerable<OrderDto> ToOrderDtoList(this IEnumerable<Order> orders)

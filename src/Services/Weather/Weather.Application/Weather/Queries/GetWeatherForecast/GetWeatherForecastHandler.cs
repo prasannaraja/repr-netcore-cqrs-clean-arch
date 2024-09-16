@@ -1,7 +1,4 @@
-﻿using Weather.Application.Data;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Application.Weather.Queries.GetOrdersByCustomer;
+﻿namespace Weather.Application.Weather.Queries.GetWeatherForecast;
 public class GetWeatherForecastHandler(IApplicationDbContext dbContext)
     : IQueryHandler<GetWeatherForecastQuery, GetWeatherForecastResult>
 {
