@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using Weather.Domain.Abstractions;
 
 namespace Weather.Infrastructure.Data.Interceptors;
 public class DispatchDomainEventsInterceptor(IMediator mediator)

@@ -1,5 +1,4 @@
 using Grpc.Core;
-using Sorting.Grpc;
 
 namespace Sorting.Grpc.Services
 {

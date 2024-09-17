@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Weather.Infrastructure.Data;
 
 namespace Weather.Infrastructure.Data.Extensions;
 public static class DatabaseExtentions

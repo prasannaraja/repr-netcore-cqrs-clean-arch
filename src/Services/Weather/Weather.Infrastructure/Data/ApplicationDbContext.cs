@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
 using Weather.Application.Data;
-using System.Reflection;
-using Weather.Domain.Models;
 
 namespace Weather.Infrastructure.Data;
+
 public class ApplicationDbContext : DbContext, IApplicationDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

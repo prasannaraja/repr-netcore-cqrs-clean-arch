@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Weather.Application.Weather.Queries.GetOrdersByCustomer;
+﻿using OpenMeteo;
+using Weather.Application.Weather.Queries.GetWeatherForecast;
 
 namespace Weather.API.Endpoints;
 
@@ -8,17 +8,17 @@ namespace Weather.API.Endpoints;
 //- Returns the list of orders for that customer.
 
 public record GetWeatherForecastRequest(string Location);
-public record GetWeatherForecastResponse(IEnumerable<OrderDto> Orders);
+public record GetWeatherForecastResponse(WeatherForecast WeatherForecast);
 
 public class GetWeatherForecast : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("/forecast", async ([FromBody] GetWeatherForecastRequest model, ISender sender) =>
+        app.MapGet("/forecast", async (string location, ISender sender) =>
         {
-            var result = await sender.Send(new GetWeatherForecastQuery(model.Location));
+            var result = await sender.Send(new GetWeatherForecastQuery(location));
 
-            var response = result.Adapt<GetWeatherForecastResponse>();
+            var response = result.WeatherForecast.Adapt<GetWeatherForecastResponse>();
 
             return Results.Ok(response);
         })

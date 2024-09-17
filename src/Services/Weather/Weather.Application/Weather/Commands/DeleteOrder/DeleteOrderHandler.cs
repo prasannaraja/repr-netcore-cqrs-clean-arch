@@ -1,7 +1,4 @@
-﻿using Weather.Application.Data;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Application.Weather.Commands.DeleteOrder;
+﻿namespace Weather.Application.Weather.Commands.DeleteOrder;
 public class DeleteOrderHandler(IApplicationDbContext dbContext)
     : ICommandHandler<DeleteOrderCommand, DeleteOrderResult>
 {

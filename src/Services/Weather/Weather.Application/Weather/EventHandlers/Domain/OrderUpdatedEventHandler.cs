@@ -1,6 +1,4 @@
-﻿using Weather.Domain.Events;
-
-namespace Weather.Application.Weather.EventHandlers.Domain;
+﻿namespace Weather.Application.Weather.EventHandlers.Domain;
 public class OrderUpdatedEventHandler(ILogger<OrderUpdatedEventHandler> logger)
     : INotificationHandler<OrderUpdatedEvent>
 {

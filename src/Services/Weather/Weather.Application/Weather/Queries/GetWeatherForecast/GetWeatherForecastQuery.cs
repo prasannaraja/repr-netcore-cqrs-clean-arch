@@ -1,8 +1,8 @@
-﻿using Weather.Application.Dtos;
+﻿using OpenMeteo;
 
-namespace Weather.Application.Weather.Queries.GetOrdersByCustomer;
+namespace Weather.Application.Weather.Queries.GetWeatherForecast;
 
 public record GetWeatherForecastQuery(string location)
     : IQuery<GetWeatherForecastResult>;
 
-public record GetWeatherForecastResult(IEnumerable<OrderDto> Orders);
+public record GetWeatherForecastResult(WeatherForecast WeatherForecast);

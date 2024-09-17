@@ -1,8 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Weather.Domain.Enums;
-using Weather.Domain.Models;
-using Weather.Domain.ValueObjects;
 
 namespace Weather.Infrastructure.Data.Configurations;
 public class OrderConfiguration : IEntityTypeConfiguration<Order>

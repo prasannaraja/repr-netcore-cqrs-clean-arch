@@ -1,7 +1,6 @@
 ﻿using BuildingBlocks.Pagination;
-using Weather.Application.Dtos;
 
-namespace Weather.Application.Weather.Queries.GetOrders;
+namespace Weather.Application.Weather.Queries.GetCurrentWeather;
 
 public record GetCurrentWeatherQuery(string location)
     : IQuery<GetCurrentWeatherResult>;

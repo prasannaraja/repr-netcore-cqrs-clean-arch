@@ -1,23 +1,14 @@
-﻿using Weather.Application.Data;
-using Weather.Domain.ValueObjects;
+﻿using OpenMeteo;
 
-namespace Weather.Application.Weather.Queries.GetOrdersByCustomer;
-public class GetWeatherForecastHandler(IApplicationDbContext dbContext)
+namespace Weather.Application.Weather.Queries.GetWeatherForecast;
+public class GetWeatherForecastHandler(IOpenMeteoLibrary openMeteoLibrary)
     : IQueryHandler<GetWeatherForecastQuery, GetWeatherForecastResult>
 {
     public async Task<GetWeatherForecastResult> Handle(GetWeatherForecastQuery query, CancellationToken cancellationToken)
     {
-        // get orders by customer using dbContext
-        // return result
+        var client = openMeteoLibrary.GetClient();
+        WeatherForecast weatherData = await client.QueryAsync(query.location);
 
-        //var orders = await dbContext.Orders
-        //                .Include(o => o.OrderItems)
-        //                .AsNoTracking()
-        //                .Where(o => o.CustomerId == CustomerId.Of(query.CustomerId))
-        //                .OrderBy(o => o.OrderName.Value)
-        //                .ToListAsync(cancellationToken);
-
-        //return new GetWeatherForecastResult(orders.ToOrderDtoList());
-        return default;
+        return new GetWeatherForecastResult(weatherData);
     }
 }

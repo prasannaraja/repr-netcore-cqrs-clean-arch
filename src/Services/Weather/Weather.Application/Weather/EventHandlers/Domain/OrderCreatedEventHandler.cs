@@ -1,6 +1,5 @@
 ﻿using MassTransit;
 using Microsoft.FeatureManagement;
-using Weather.Domain.Events;
 
 namespace Weather.Application.Weather.EventHandlers.Domain;
 public class OrderCreatedEventHandler

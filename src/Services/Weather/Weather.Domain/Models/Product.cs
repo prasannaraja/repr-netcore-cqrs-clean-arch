@@ -1,7 +1,4 @@
-﻿using Weather.Domain.Abstractions;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Domain.Models;
+﻿namespace Weather.Domain.Models;
 public class Product : Entity<ProductId>
 {
     public string Name { get; private set; } = default!;

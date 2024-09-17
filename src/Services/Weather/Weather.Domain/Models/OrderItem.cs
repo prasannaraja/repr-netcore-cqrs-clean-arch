@@ -1,7 +1,4 @@
-﻿using Weather.Domain.Abstractions;
-using Weather.Domain.ValueObjects;
-
-namespace Weather.Domain.Models;
+﻿namespace Weather.Domain.Models;
 public class OrderItem : Entity<OrderItemId>
 {
     internal OrderItem(OrderId orderId, ProductId productId, int quantity, decimal price)
