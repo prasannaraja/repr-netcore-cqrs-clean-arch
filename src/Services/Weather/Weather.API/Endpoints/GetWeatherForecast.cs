@@ -3,10 +3,6 @@ using Weather.Application.Weather.Queries.GetWeatherForecast;
 
 namespace Weather.API.Endpoints;
 
-//- Accepts a customer ID.
-//- Uses a GetOrdersByCustomerQuery to fetch orders.
-//- Returns the list of orders for that customer.
-
 public record GetWeatherForecastRequest(string Location);
 public record GetWeatherForecastResponse(WeatherForecast WeatherForecast);
 
@@ -18,7 +14,7 @@ public class GetWeatherForecast : ICarterModule
         {
             var result = await sender.Send(new GetWeatherForecastQuery(location));
 
-            var response = result.WeatherForecast.Adapt<GetWeatherForecastResponse>();
+            var response = result.CurrentWeatherForecast.Adapt<GetWeatherForecastResponse>();
 
             return Results.Ok(response);
         })

@@ -9,6 +9,12 @@ public class GetWeatherForecastHandler(IOpenMeteoLibrary openMeteoLibrary)
         var client = openMeteoLibrary.GetClient();
         WeatherForecast weatherData = await client.QueryAsync(query.location);
 
-        return new GetWeatherForecastResult(weatherData);
+        WeatherForecastOptions options = new ();
+        options.Start_date = "2024-09-18";
+        options.End_date = "2024-09-22";
+
+        var forecast = await client.QueryAsync(query.location, options);
+
+        return new GetWeatherForecastResult(weatherData, new() { forecast });
     }
 }

@@ -5,4 +5,4 @@ namespace Weather.Application.Weather.Queries.GetWeatherForecast;
 public record GetWeatherForecastQuery(string location)
     : IQuery<GetWeatherForecastResult>;
 
-public record GetWeatherForecastResult(WeatherForecast WeatherForecast);
+public record GetWeatherForecastResult(WeatherForecast CurrentWeatherForecast,List<WeatherForecast> FiveDaysForecast);
