@@ -18,6 +18,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.UseApiServices();
+MapsterConfig.Configure();
 
 if (app.Environment.IsDevelopment())
 {
